@@ -9,10 +9,14 @@ class Course
 {
 private:
 	string name;
-	GeneralList<Student>* ListStudient;
+	GeneralList<Student>* listStudient;
 public:
 	Course();
 	Course(string name);
 	void setListStudient(GeneralList<Student>* ListStudient);
+	void setName(string name);
+	void toString();
+	string getName();
+	GeneralList<Student>* getListStudient();
 };
 

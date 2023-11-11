@@ -1,2 +1,13 @@
-﻿  Student.cpp
+﻿  ListManage.cpp
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\ListManage.cpp(80,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\ListManage.cpp(81,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\GeneralList.h(38,18): warning C4101: 'auxNode': variable local sin referencia
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\GeneralList.h(36,17): message : al compilar la función del miembro clase plantilla "DoubleNode<T> *GeneralList<T>::getNodeData(T *)"
+          with
+          [
+              T=Student
+          ]
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\ListManage.cpp(64,20): message : vea la primera referencia a “GeneralList<Student>::getNodeData” en “ListManage::searchStudent”
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\ListManage.cpp(6,40): message : Vea la referencia a la creación de una instancia de clase plantilla "GeneralList<Student>" que se está compilando
+D:\Ciclo ll\Progra\Quiz\Quiz\quiz\GeneralList.h(65): warning C4715: 'GeneralList<Student>::getNodeData': no todas las rutas de acceso de control devuelven un valor
   quiz.vcxproj -> D:\Ciclo ll\Progra\Quiz\Quiz\quiz\x64\Debug\quiz.exe

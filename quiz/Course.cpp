@@ -2,16 +2,37 @@
 
 Course::Course()
 {
-	ListStudient = new GeneralList<Student>;
+	name = "";
+	listStudient = new GeneralList<Student>;
 }
 
 Course::Course(string name)
 {
-	ListStudient = new GeneralList<Student>;
+	listStudient = new GeneralList<Student>;
 	this->name = name;
 }
 
 void Course::setListStudient(GeneralList<Student>* ListStudient)
 {
-	this->ListStudient = ListStudient;
+	this->listStudient = ListStudient;
+}
+
+void Course::setName(string name)
+{
+	this->name = name;
+}
+
+void Course::toString()
+{
+	listStudient->printList();
+}
+
+string Course::getName()
+{
+	return name;
+}
+
+GeneralList<Student>* Course::getListStudient()
+{
+	return listStudient;
 }

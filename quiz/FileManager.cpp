@@ -17,9 +17,6 @@ GeneralList<Student>*FileManager::uploadFileInformation(string path)
     string line;
     while (getline(file, line)) {
         if (!line.empty()) {
-            pos = line.find(";");
-            line = line.substr(pos + 1, line.size() - pos - 1);
-
             student = new Student;
             pos = line.find(",");
             auxiliary = line.substr(0, pos);
