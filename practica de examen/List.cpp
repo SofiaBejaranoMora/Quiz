@@ -27,7 +27,7 @@ void List::insertOrdered(int data)
 		}
 	}
 	else if(head->getData()<data){
-		//aux = new Node(data);
+		//aux = new Node(data);//NOTE: eliminar codigo muerto
 		head->setPrev(aux);
 		aux->setNext(head);
 		head = aux;
@@ -35,6 +35,7 @@ void List::insertOrdered(int data)
 	else {
 		Node* current = head;
 		while (current) {
+			//NOTE: codigo muy anidado
 			if (current->getData() < data) {
 				current->getPrev()->setNext(aux);
 				aux->setPrev(current->getPrev());
